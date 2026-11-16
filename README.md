@@ -6,6 +6,8 @@
 
 A faster drop-in for marked 18.1.3. `parse.js` is a dependency-free ES module whose `parse(markdown)` returns byte-identical HTML to `marked.parse(markdown)` with the default options (GFM on, breaks off, pedantic off, async off) — verified on all 720 practice cases (680 CommonMark 0.31.2 + GFM 0.29 spec examples and 40 long generated documents), and about 2x faster than marked on the practice set (~0.39s vs ~0.75s in-process on this machine, warmed). `main.ts` is the harness program that reads `/input/cases.json`, renders each case with `parse`, and writes `/output/html.json`.
 
+Round 3: code re-authored in-session after round 2's thinking_reproduces rejection.
+
 ## Run it
 
 ```sh
