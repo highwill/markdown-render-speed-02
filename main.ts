@@ -1,5 +1,6 @@
 // Harness: read /input/cases.json, render each case with parse.js alone,
 // write /output/html.json. No imports of marked; no caching across cases.
+// Round 2 rebuild: same contract, faster parse.js (see README.md).
 import { readFileSync, writeFileSync, mkdirSync } from 'node:fs';
 import { join } from 'node:path';
 import parse from './parse.js';
